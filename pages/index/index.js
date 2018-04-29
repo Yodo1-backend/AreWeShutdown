@@ -15,6 +15,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  naviToCallerPage: function(){
+    wx.navigateTo({
+      url: '../servicescaller/servicescaller',
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

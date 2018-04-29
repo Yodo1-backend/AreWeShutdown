@@ -10,7 +10,6 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <view class="startTest" style='margin-top: 30px'>
-     <button wx:if="true" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 开始测试！ </button>
-  </view>
+  <button class="weui-btn" type="primary" bindtap="naviToCallerPage">开始测试!</button>
+  <button class="weui-btn" type="default"> 配置 </button>
 </view>
