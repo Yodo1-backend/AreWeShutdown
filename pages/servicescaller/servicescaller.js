@@ -1,18 +1,25 @@
 // pages/servicescaller/servucescaller.js
+const HttpRequest = require('../../utils/HttpRequest.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    logs:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    HttpRequest.GET("https://olc.yodo1api.com/config/getAddress",(res)=>{
+      console.log(res);
+      this.setData({
+        logs:res
+      })
+    });
   },
 
   /**

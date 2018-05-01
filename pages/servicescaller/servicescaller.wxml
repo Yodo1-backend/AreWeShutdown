@@ -1,2 +1,2 @@
 <!--pages/servicescaller/servicescaller.wxml-->
-<text>pages/servicescaller/servicescaller.wxml</text>
+<text class="user-motto" font-size ='30'>{{logs}}</text>
